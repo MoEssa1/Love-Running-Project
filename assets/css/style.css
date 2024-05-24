@@ -208,13 +208,15 @@ main {
 #main-signup {
     display: flex;
     flex-direction: column;
+    /* check why this was used */
 }
 
 #signup {
     background: url("../images/signup-image.webp") no-repeat center / cover;
     background-position: 75%;
     flex-grow: 1;
-    padding: 20px 10%;
+    padding: 20px 10%; 
+    /* double check padding */
 }
 
 #signup-form {
@@ -232,6 +234,9 @@ main {
 .text-input {
     margin-top: 5px;
     margin-bottom: 20px;
+    height: 25px;
+    padding: 0 5px;
+    width: 100%;
     background: transparent;
     color:#fafafa;
     border: 1px solid #fafafa;
@@ -241,6 +246,7 @@ main {
 .radio-buttons {
     display: flex;
     justify-content: space-between;
+    /* width 100% ?? */
 }
 
 .join-button {
@@ -338,6 +344,29 @@ main {
     #photos {
         column-count: 3;
     }
+
+    /* Sign-up section */
+    #signup {
+        background-position: 50%;
+        position: relative;
+        padding-top: 150px;
+        padding-left: 10%;
+    }
+
+    #signup-form {
+        position:absolute;
+        max-width: 400px;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
 }
 
 
